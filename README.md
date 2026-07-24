@@ -1,7 +1,7 @@
-The most painful part of building this without a framework is handling POST requests and manually parsing the body data.
-We have to manually collect these chunks and combine them into a single string so we can parse the complete JSON object once the stream finishes (req.on('end')).
-The 201 Created status code. Why? It is specifically used for POST requests to explicitly tell the client: "I received your request, it was successful, and a new resource was created on the server as a result."
-DELETE /api/tasks?task=Learn Node.js):
+1. The most painful part of building this without a framework is handling POST requests and manually parsing the body data.
+2. We have to manually collect these chunks and combine them into a single string so we can parse the complete JSON object once the stream finishes (req.on('end')).
+3. The 201 Created status code. Why? It is specifically used for POST requests to explicitly tell the client: "I received your request, it was successful, and a new resource was created on the server as a result."
+4. DELETE /api/tasks?task=Learn Node.js):
 //ROUTE 5: DELETE /api/tasks
 if (pathname === '/api/tasks' && method === 'DELETE') {
     
